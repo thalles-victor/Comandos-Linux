@@ -171,6 +171,19 @@ cd:
   code .
 ```
 
+<h1> top </h1>
+
+<p>
+  Esse comando mostra informações de uso e processos do hardwar do seu computador como memória, porcessador...
+</p>
+
+```console
+  top
+```
+<p>
+  para encerrar o processo basta usar o atalho < ctrl + c >
+</p>
+
 # Agora vamos falar de comandos do teclado no terminal
 <h1> ctrl + c </h1>
 <p>Encerra um processo que está em execução</p>
