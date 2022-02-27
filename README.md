@@ -1,4 +1,5 @@
-Sasber usar o terminal é uma grande mão na roda para qualquer desenvolvedor, por isso nesse documento você verá os principais comandos linux para quem está iniciando.
+Saber usar o terminal é uma grande mão na roda para qualquer desenvolvedor, por isso, nesse documento você verá os principais comandos linux para quem está iniciando.
+caso queria se aprofundar mais recomendo o [vídeo do DioLinux](https://www.youtube.com/watch?v=JEhVB4VHsTI) sobre comandos linux.
 
 <h1> Antes de iniciarmos quero alertalos de algumas coisas </h1>
 
@@ -115,29 +116,7 @@ cd:
 ```console
   mkdir Photos Vídeos Músicas Documentos
 ```
-<h1> ⚠️ rm</h1>
 
-<p>Caso você tenha criado pastas que não estavam no seu interesse, você também consegue removelas pelo terminal, basta colocar o rm com a flag -r e o nome da pasta, so tome cuidado ao remover algo que seja do seu interesse</p>
-
-```console
-  rm -r Photos
-```
-<p> caso o sistema não de permisão para remover basta digitar um sudo na frente do comando </p>
-
-```console
-  sudo rm -r Vídeos
-```
-
-<p>Eele provavelmente vai pedir senha do computador basta você digitar e dar um enter no final</p>
-
-
-<h3> ☠️ Cuidado com o comnando abaixo !!! </h3>
-
-<p> Caso queira remover todos os arquivos dentro de um diretório basta digitar depois do comando rm o sinal de asterisco < * >, mas tome cuidado para não remover arquivos do seu interesse. </p>
-
-```console
-  rm -r *
-```
 
 <h1> touch </h1>
 
@@ -160,6 +139,30 @@ cd:
 
 ```console
   touch main.py
+```
+
+<h1> ⚠️ rm</h1>
+
+<p>Caso você tenha criado pastas que não estavam no seu interesse, você também consegue removelas pelo terminal, basta colocar o < sudo > para dar permição para remover e depois o < rm > com a flag < -r > e o nome da pasta, so tome cuidado ao remover algo que seja do seu interesse.</p>
+
+```console
+  sudo rm -r Photos
+```
+<p> caso o sistema não de permisão para remover basta digitar um sudo na frente do comando </p>
+
+```console
+  sudo rm -r Vídeos
+```
+
+<p>Eele provavelmente vai pedir senha do computador basta você digitar e dar um enter no final</p>
+
+
+<h3> ☠️ Cuidado com o comnando abaixo !!! </h3>
+
+<p> Caso queira remover todos os arquivos dentro de um diretório basta digitar depois do comando rm o sinal de asterisco < * >, mas tome cuidado para não remover arquivos do seu interesse. </p>
+
+```console
+  sudo rm -r *
 ```
 
 <h1>code . </h1>
