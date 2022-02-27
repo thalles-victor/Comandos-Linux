@@ -1,14 +1,16 @@
+
+<h1>👨‍💻👩‍💻Principais comandos linux</h1>
 Saber usar o terminal é uma grande mão na roda para qualquer desenvolvedor, por isso, nesse documento você verá os principais comandos linux para quem está iniciando.
 caso queria se aprofundar mais recomendo o [vídeo do DioLinux](https://www.youtube.com/watch?v=JEhVB4VHsTI) sobre comandos linux.
 
 <h1> Antes de iniciarmos quero alertalos de algumas coisas </h1>
 
-<p> Quando eu usar o sinal de maior e de menor siguinifica que dentro dele tem que ser inserido o conteúdo que o nome está descrevendo, e que esses sinais não devem aparecer no terminal. Exemplo </p>
+<p> Quando nos exemplos aparecer o sinal de maior e de menor,siguinifica que dentro dele tem que ser inserido o conteúdo que está descrito, e que esses sinais não devem ser colocados na hora de escrever o comando. Exemplo </p>
 
 ```console
   < meunome >
 ```
-<p>  Equivale a:  </p> 
+<p>  Equivale à:  </p> 
 
 ```console
   thalles
@@ -18,7 +20,7 @@ caso queria se aprofundar mais recomendo o [vídeo do DioLinux](https://www.yout
 ```console
   < nomedoseucomputador >
 ```
-<p>  Equivale a:</p> 
+<p>  Equivale à:</p> 
 
 ```console
   root
@@ -30,7 +32,7 @@ caso queria se aprofundar mais recomendo o [vídeo do DioLinux](https://www.yout
   cd <nomeDaSuaÁreaDeTrabalhor>
 ```
 
-<p> isso equivale a: </p>
+<p> Equivale à: </p>
 
 ```console
   cd Desktop
@@ -44,7 +46,7 @@ caso queria se aprofundar mais recomendo o [vídeo do DioLinux](https://www.yout
 <h1> Agora vamos ao que interessa </h1>
 
 
-O primeiro comando básico é o pwd que mostra os a sua licalização no diretório atual, ele não precisa de parẫmetro então pode ser passando sozinho.
+O primeiro comando básico é o pwd, ele mostra sua licalização no diretório atual; lembrando que diretorio são as pastas e que cada pasta está inserida dentro de outra que está inserida dentro de outra. Por isso o comando pwd vai mostrar a arquitetura dos diretórios. Mas não é um comando muito usado, pois o próprio terminal do linux já mostra por padrão essa raiz.
 
 <h1>pwd</h1>
 
@@ -55,7 +57,7 @@ O primeiro comando básico é o pwd que mostra os a sua licalização no diretó
 
 <h1>ls</h1>
 
-O ls mostra todos os dieretórios e arquivos que estão presentes no seu diretório atual no terminal. Ele também não necessita de parâmetro.
+O ls mostra todos os dieretórios e arquivos que estão presentes no seu diretório atual. Ele também não necessita de parâmetro.
 
 </p>
 
@@ -65,7 +67,7 @@ O ls mostra todos os dieretórios e arquivos que estão presentes no seu diretó
 
 <h1>clear</h1>
 
-<p>Ao usar continuamente o terminal sua tela enche de informações que não serão mais úteis, para limpar o terminal basta usar o comando clear</p>
+<p>Ao usar continuamente o terminal sua tela enche de informações que não serão mais úteis, para limpar o terminal basta usar o comando clear, fiquem traquilos, ele só vai limpar o terminal é não vai apagar nada no seu computador.</p>
 
 ```console
   clear
@@ -75,8 +77,8 @@ O ls mostra todos os dieretórios e arquivos que estão presentes no seu diretó
 
 <p>
 cd:
-  O cd entra ou sai de um diretório
-  para entrar basta digitar o cd logo em seguida, como parâmetro basta digitar o nome do diretório que deseja entrar
+  O cd tem a função de entra ou sai de um diretório (pastas)
+  para entrar basta digitar o < cd > logo em seguida, como parâmetro basta digitar o < nome-do-diretório > que deseja entrar
 </p>
 
 
@@ -85,8 +87,9 @@ cd:
 ```console
  cd < nome-do-diretório-de-interesse >
 ```
+<p>Você pode usar o comando < l > para ver os diretórios. Quando executado os diretórios vai ficar com uma barra ( / ) na frente, siguinificam que são pastas e podem ser acessados com o comando < cd >  </p>
 
-<p> Para VOLTAR um diretório </p>
+<p> Para VOLTAR para o diretório anterior </p>
 
 ```console
   cd ../
@@ -97,11 +100,11 @@ cd:
 ```console
   cd ../../../
 ```
-<p> Nesse caso ele voltou três vezes </p>
+<p> Nesse caso ele voltou três vezes pois foi a quantidade de repetições dos ../ </p>
 
 <h1>mkdir</h1>
 
-<p> O mkdir cria pastas basta escrevelo e na sua frente passar o nome da pasta como parâmetro. Lembrese que se o nome da pasta tiver espaço você deve colocar o aspas < ' > antes do nome dela, caso contrário ele vai criar várias pastas</p>
+<p> O mkdir cria diretórios (pastas), escrever o comando e na sua frente você deve passar o nome que deseja dar para a sua pasta. Lembre se de que se o nome da pasta tiver espaço você deve colocar o aspas < ' > entre o nome da pasta. Caso você não faça isso, ele vai criar várias pastas simutâneas</p>
 
 ```console
   mkdir '< nome-da-pasta >'
@@ -111,7 +114,7 @@ cd:
   mkdir 'Minhas fotos'
 ```
 
-<p> Agora se você não vai cirar uma pasta com espaço no nome ou se quer realmente criar várias pastas, não precisa colocar aspas.</p>
+<p> Agora caso você realmente queira cirar várias pastas, não cessecita usar as aspas, esse exemplo abaixo cria quatro pastas de uma única vez.</p>
 
 ```console
   mkdir Photos Vídeos Músicas Documentos
@@ -120,7 +123,7 @@ cd:
 
 <h1> touch </h1>
 
-<p>O comando touch serve para criar arquivos de qualquer extensão basta passar após o comando touch o nome do arquivo com ponto < . > e depois a extensão.</p>
+<p>O comando touch serve para criar arquivos de qualquer extensão basta passar após o comando < touch > o nome do arquivo com ponto < . > e depois a extensão.</p>
 
 ```console
   touch < nome-do-arquivo.extensão >
@@ -133,7 +136,7 @@ cd:
 ```
 
 ```console
-  touch metexto.txt
+  touch meutexto.txt
 ```
 
 
@@ -143,12 +146,12 @@ cd:
 
 <h1> ⚠️ rm</h1>
 
-<p>Caso você tenha criado pastas que não estavam no seu interesse, você também consegue removelas pelo terminal, basta colocar o < sudo > para dar permição para remover e depois o < rm > com a flag < -r > e o nome da pasta, so tome cuidado ao remover algo que seja do seu interesse.</p>
+<p>Caso você tenha criado pastas ou arquivos que não estavam no seu interesse, você também consegue removelas pelo terminal, basta colocar o < sudo > para dar permição para remover e depois o < rm > com a flag < -r > e o nome da pasta, so tome cuidado ao remover algo que seja do seu interesse.</p>
 
 ```console
   sudo rm -r Photos
 ```
-<p> caso o sistema não de permisão para remover basta digitar um sudo na frente do comando </p>
+<p>Ou</p>
 
 ```console
   sudo rm -r Vídeos
@@ -159,7 +162,7 @@ cd:
 
 <h3> ☠️ Cuidado com o comnando abaixo !!! </h3>
 
-<p> Caso queira remover todos os arquivos dentro de um diretório basta digitar depois do comando rm o sinal de asterisco < * >, mas tome cuidado para não remover arquivos do seu interesse. </p>
+<p> Caso queira remover todos os arquivos dentro de um diretório basta digitar depois do comando rm o sinal de asterisco < * >, mas tome cuidado para não remover arquivos do seu interesse. Qual quer coisa de um < ls >  antes para listar todos os arqivos e pastas para ver o que vai ser removido </p>
 
 ```console
   sudo rm -r *
@@ -177,7 +180,7 @@ cd:
 <h1> top </h1>
 
 <p>
-  Esse comando mostra informações de uso e processos do hardwar do seu computador como memória, porcessador...
+  Esse comando mostra informações de uso e processos do hardware do seu computador como memória, porcessador...
 </p>
 
 ```console
