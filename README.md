@@ -65,6 +65,12 @@ O ls mostra todos os dieretórios e arquivos que estão presentes no seu diretó
  ls
 ```
 
+<p>Você pode também listar arquivos ou pastas ocultas com o parâmetro < -a > </p>
+
+```console
+  ls -a
+ ```
+
 <h1>clear</h1>
 
 <p>Ao usar continuamente o terminal sua tela enche de informações que não serão mais úteis, para limpar o terminal basta usar o comando clear, fiquem traquilos, ele só vai limpar o terminal é não vai apagar nada no seu computador.</p>
